@@ -1,0 +1,159 @@
+/* global...*/
+body{
+     background: aqua;
+     font-family: "Borel", cursive;
+     font-weight: 400;
+
+}
+h1, h2, h3{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    
+  }
+  
+html{
+    box-sizing: border-box;
+}
+/* this will stretch the whole image to screen size*/
+html, body{
+    height: 100%;
+}
+/* inheriting box sizing property because added element before body*/
+*,*::before.*::after{
+    box-sizing: inherit;
+}
+/* home...*/
+.home{
+       background-image:url(images/shikunara.jpeg);  
+       background-repeat:no-repeat;
+	   background-size:cover;
+       display: flex;
+       flex-direction: column;
+	  
+}
+
+
+.content{
+  
+   margin: 0 auto;
+   padding: 30px;
+    width:900px;
+    
+    
+}
+.container{ background :rgb(255 255 255/0.6);
+                    border-color:yellow;
+                    padding: 0 20px;
+}
+
+.home .content{   
+    border-width: 2px;
+    
+   
+    flex:1 0 auto;
+}
+/**/
+a{
+    color:rgb(31, 7, 247);
+}
+a:hover{
+    color:rgb(207, 252, 8);
+}
+
+/* resume...*/
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+
+.resume{
+    margin: 0px;
+}
+.sections {
+    margin: 0 auto;
+    width:900px;
+}
+.resume header::before{
+    background-image: url(images/shikunara.jpeg);
+    background-size: cover;
+    display: block;
+   content: "";
+    height: 600px;
+
+
+}
+
+
+.download-link{
+    position: fixed;
+    top: 5px;
+    left: 6px;
+}
+
+h3{
+    margin: 0 auto;
+    width:900px;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed black;
+
+}
+
+.btn{
+     color:rgb(58, 27, 236);
+     background-color: rgb(21, 200, 245);
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    column-gap: 20px;
+    }
+
+/* footer...*/
+@media screen and (min-width: 860px){
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
+footer{
+    background-color: black;
+    color: blanchedalmond;
+    border-color: skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 0 20px;
+    }
+    
+    footer p a:hover{
+       color: turquoise;
+    }
+    .socials{
+        list-style-type: none;
+        padding: 0;
+    }
+    .socials li{
+        display: inline-block;
+        margin-right: 10px;
+        
+    }
+    .socials img{
+      width: 20px;
+      height: 20px;
+    }
+    
+   
